@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Richard\'s Application</string>
+    <string name="Title_BMI">BMI Calculator</string>
+    <string name="CopyRight2020">Written by Richard Chen 2020</string>
+</resources>
