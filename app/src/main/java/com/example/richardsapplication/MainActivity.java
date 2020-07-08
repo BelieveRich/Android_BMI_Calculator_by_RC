@@ -10,7 +10,9 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
-    public static double gBMI_result = 0.0f;
+    public static double gBMI_result   = 0.0f;
+    public static double gInput_weight = 0.0f;
+    public static double gInput_height = 0.0f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
         double BMI_result = Double.parseDouble(editTextWeight.getText().toString()) /
                             DivideBy100(Double.parseDouble(editTextHeight.getText().toString())) /
                             DivideBy100(Double.parseDouble(editTextHeight.getText().toString()));
-        gBMI_result = BMI_result;
+        gBMI_result   = BMI_result;
+        gInput_weight = Double.parseDouble(editTextWeight.getText().toString());
+        gInput_height = DivideBy100(Double.parseDouble(editTextHeight.getText().toString()));
+
         /* round to 2 decimal places */
         String message = "Height = " + editTextHeight.getText().toString() +
                          "\nWeight = " + editTextWeight.getText().toString() +

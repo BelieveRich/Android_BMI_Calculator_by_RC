@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_BMI_analyzer_gainorloss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:text="Enter your weight(kg):"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BMI_analyzer_gainorloss"
         tools:layout_editor_absoluteX="35dp" />
 
     <EditText
@@ -64,8 +64,8 @@
         android:ems="10"
         android:inputType="numberDecimal"
         android:textSize="14sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/textView" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_BMI_analyzer_gainorloss"
+        app:layout_constraintStart_toEndOf="@+id/textView_BMI_analyzer_gainorloss" />
 
     <EditText
         android:id="@+id/editTextNumberDecimalSex"

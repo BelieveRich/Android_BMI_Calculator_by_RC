@@ -11,7 +11,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:text="BMI Value"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_BMIGroup_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Your BMI Group:"
+        app:layout_constraintTop_toBottomOf="@+id/BMI_Analyzer_textView1"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/textView_BMIGroup_result"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_BMIGroup_tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toEndOf="@+id/textView_BMIGroup_tag" />
+
+    <TextView
+        android:id="@+id/textView_BMI_analyzer_gainorloss_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BMIGroup_tag"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/textView_BMI_analyzer_gainorloss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Gain/Loss"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_BMI_analyzer_gainorloss_tag"
+        app:layout_constraintStart_toEndOf="@+id/textView_BMI_analyzer_gainorloss_tag" />
+
+    <TextView
+        android:id="@+id/textView_BMI_analyzer_gainorloss_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="This much weight"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_BMI_analyzer_gainorloss"
+        app:layout_constraintStart_toEndOf="@+id/textView_BMI_analyzer_gainorloss" />
 </androidx.constraintlayout.widget.ConstraintLayout>
